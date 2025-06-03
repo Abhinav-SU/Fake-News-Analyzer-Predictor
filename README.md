@@ -54,11 +54,14 @@ pip install pandas numpy matplotlib sklearn seaborn re
    cd Fake-News-Analyzer-Predictor
    ```
 
-3. **Run the Jupyter Notebook**:
-   Open the `fakeNewsDetection.ipynb` notebook and run the cells to train and test the models.
+3. **Run the training script**:
+   Execute `main.py` to train and evaluate the models. You can optionally specify the dataset directory if your CSV files are stored elsewhere.
+   ```bash
+   python main.py --dataset_dir path/to/datasets
+   ```
 
 4. **Evaluate the results**:
-   The code will output performance metrics (accuracy, precision, recall, F1-score) and will allow you to input custom news data for classification as real or fake.
+   The script prints the classification report and accuracy for each algorithm after training.
 
 ## License
 
